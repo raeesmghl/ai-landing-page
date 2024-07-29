@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+@font-face {
+    font-family: face;
+    src: url(/assets/fonts/Protos/Protos.otf);
+}
+
+
+
+/* BASIC CSS */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --gray: #ccc;
+    --body-bg: #09090c;
+    --logo-clr: #a3e635;
+    --highlight: #171717;
+    --blur: rgba(255, 255, 255, 0.2);
+    --btn-not-active:#231f1c;
+}
+
+
+a {
+    text-decoration: none;
+
+}
+
+p {
+    color: var(--gray);
+}
+
+img {
+    object-fit: cover;
+}
+
+
+
+
+body {
+
+    background-color: var(--body-bg);
+
+}
+
+
+.change-in-padding {
+    padding: 1.25rem 3rem;
+}
+
+
+
+/* main css */
+
+
+
+
+
+#free-trial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+
+.logo i {
+    background-color: var(--logo-clr);
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 500px;
+    aspect-ratio: 1/1;
+
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 1.25rem;
+    background-color: var(--highlight);
+    border-radius: 500px;
+}
+
+
+.nav-links>a {
+    color: #fff;
+    transition: .5s ease;
+    font-weight: normal;
+}
+
+.nav-links>a:hover {
+    color: var(--logo-clr);
+}
+
+
+.nav-links>a[href='#services'] {
+    position: relative;
+}
+
+.nav-links>a[href='#services']::after {
+    content: '';
+    height: 0.375rem;
+    width: 0.375rem;
+    background-color: var(--logo-clr);
+    position: absolute;
+    z-index: 999;
+    top: 2%;
+    left: 99%;
+    border-radius: 50px;
+}
+
+
+.nav-links>a[href='#services']:hover::after {
+    background-color: #fff;
+}
+
+
+
+.seperator {
+    height: .95rem;
+    width: .1rem;
+    background-color: var(--logo-clr);
+}
+
+
+
+.nav-links>p {
+    font-size: .8rem;
+}
+
+
+
+
+
+.login {
+    background-color: var(--highlight);
+    padding: .5rem .5rem .5rem 1rem;
+    border-radius: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login>a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+
+.login>img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 500px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 690px) {
+
+    #free-trial {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        justify-content: space-between;
+        order: 3;
+        width: 100%;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 510px) {
+
+
+    /* not only for nav, but for all the containers, having class of change-in-padding */
+    .change-in-padding {
+        padding: 1.25rem;
+    }
+
+    /* text was overflowing */
+    .nav-links>a {
+        font-size: .8rem;
+    }
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    .nav-links {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .seperator {
+        width: 100%;
+        height: .1rem;
+    }
+
+}
+
+
+
+
+
+/* 
+@media screen and (min-width: 1366px) {
+    html{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1690px) {
+    html{
+        font-size: 32px;
+    }
+} */
