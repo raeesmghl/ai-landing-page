@@ -1,0 +1,138 @@
+.discover{
+    /* change-in-padding class auto add margin button , but i dont want margin bottom for discover section */
+    margin-bottom: 0 !important;
+}
+.discover-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 4rem;
+}
+
+.discover-header>h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    max-width: 30%;
+    text-align: right;
+    font-family: face;
+
+}
+
+.discover-header>p {
+    max-width: 50%;
+    text-align: left;
+}
+
+
+
+.discover-video{
+    position: relative;
+    overflow: hidden;
+}
+
+.discover-video img{
+    width: 100%;
+    aspect-ratio: 5/2;
+    border-radius: 20px;
+}
+
+
+
+
+
+.discover-video > i{
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    font-size: 6rem;
+    color: rgba(0, 0, 0,.8);
+}
+
+
+
+
+
+
+
+.social{
+    position: absolute;
+    z-index: 999;
+    bottom: 2rem;
+    left: 50%;
+    translate: -50%;
+    padding: .4rem 1rem;
+    backdrop-filter: blur(5rem);
+    -webkit-backdrop-filter: blur(5rem);
+    border-radius: 10px;
+    border: 2px solid var(--blur);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.social i{
+    color: var(--logo-clr);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1262px) {
+
+    .discover-header {
+        flex-direction: column;
+    }
+
+
+    .discover-header>h3 {
+        max-width: 100%;
+        text-align: center;
+        order: 1;
+    }
+
+    .discover-header>p {
+        max-width: 100%;
+        text-align: center;
+        order: 2;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .discover-video img{
+        aspect-ratio: 1/1;
+    }
+}
