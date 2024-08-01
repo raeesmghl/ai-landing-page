@@ -1,1 +1,207 @@
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 4rem;
+}
 
+.services-header>h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    max-width: 30%;
+    text-align: left;
+    font-family: face;
+
+}
+
+.services-header>p {
+    max-width: 50%;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+.services-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+
+}
+
+
+.item {
+    padding: 1.5rem;
+    background-color: var(--highlight);
+    border-radius: 1.25rem;
+}
+
+
+
+
+.item-title {
+    padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+    background-color: #2a2c2e;
+    border-radius: 500px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+
+    margin-bottom: 1.5rem;
+}
+
+
+.gradient {
+    height: 2.5rem;
+    width: 2.5rem;
+    background: linear-gradient(purple, green);
+    border-radius: 500px;
+}
+
+.item-title p {
+    font-weight: normal;
+}
+
+
+
+
+.item-desc h5 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* 1st gradient */
+
+.item1 .item-title .gradient{
+    background: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%)
+}
+
+
+
+
+
+
+/* 2nd gradient */
+
+.item2 {
+    background-color: var(--logo-clr);
+}
+
+.item2 .item-title{
+    background-color: var(--body-bg);
+}
+
+.item2 .item-title .gradient{
+    background: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+}
+
+.item2 .item-desc h5,
+.item2 .item-desc p {
+    color: var(--body-bg);
+}
+
+.item2 .item-desc p {
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* 3rd gradient */
+
+.item3 .item-title .gradient{
+    background: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+
+
+
+
+/* 4th gradient */
+
+.item4 .item-title .gradient{
+    background: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1262px) {
+
+    .services-header {
+        flex-direction: column;
+    }
+
+
+    .services-header>h3 {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .services-header>p {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 680px) {
+
+    .services-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1400px) {
+    .services-items {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+}
+
+
+
+@media screen and (min-width: 1690px) {
+    .services-items {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
