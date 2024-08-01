@@ -19,6 +19,7 @@
     box-sizing: border-box;
     font-family: "Kanit", sans-serif;
     font-weight: 300;
+    scroll-behavior: smooth;
 }
 
 html,
@@ -33,16 +34,15 @@ body {
     --logo-clr: #a3e635;
     --highlight: #171717;
     --blur: rgba(255, 255, 255, 0.2);
-    --btn-not-active:#231f1c;
+    --btn-not-active: #231f1c;
 }
 
 
-a {
+a  {
     text-decoration: none;
-
 }
 
-p {
+p,h1,h2,h3,h4,h5{
     color: var(--gray);
 }
 
@@ -54,20 +54,41 @@ img {
 
 
 body {
-
     background-color: var(--body-bg);
-
 }
 
 
 .change-in-padding {
     padding: 1.25rem 3rem;
+    margin-bottom: 5rem;
 }
 
 
 
 /* main css */
 
+
+
+
+/* up button */
+
+.up-button{
+    background-color: var(--logo-clr);
+    color: var(--body-bg);
+    position: fixed;
+    top: 150%;
+    right: 5%;
+    z-index: 9999;
+    padding: 0rem .5rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: 2px solid var(--body-bg);
+    transition: .5s cubic-bezier(.26,-0.49,.31,1.46);
+}
+
+.show-up-btn{
+    top: 80%;
+}
 
 
 
@@ -80,6 +101,10 @@ body {
 }
 
 
+
+.logo{
+    color: var(--body-bg);
+}
 
 
 .logo i {
@@ -107,11 +132,17 @@ body {
     color: #fff;
     transition: .5s ease;
     font-weight: normal;
+    text-wrap: nowrap;
 }
 
 .nav-links>a:hover {
     color: var(--logo-clr);
 }
+
+.active-link{
+    color: var(--logo-clr) !important;
+}
+
 
 
 .nav-links>a[href='#services'] {
@@ -135,8 +166,6 @@ body {
     background-color: #fff;
 }
 
-
-
 .seperator {
     height: .95rem;
     width: .1rem;
@@ -147,6 +176,7 @@ body {
 
 .nav-links>p {
     font-size: .8rem;
+    text-wrap: nowrap;
 }
 
 
@@ -247,15 +277,18 @@ body {
 
 
 
-/* 
-@media screen and (min-width: 1366px) {
+
+
+
+
+@media screen and (min-width: 1400px) {
     html{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1690px) {
     html{
-        font-size: 32px;
+        font-size: 28px;
     }
-} */
+}
