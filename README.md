@@ -4,3 +4,4 @@
 
 <img src="./assets/screenshots/sc1.png">
 <img src="./assets/screenshots/sc2.png">
+<img src="./assets/screenshots/sc3.png">
