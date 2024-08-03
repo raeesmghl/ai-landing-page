@@ -1,7 +1,7 @@
 ## i tried to copy a ai-landing-page UI-design by ASMRprog
 
 
-@AsmrProg-YT
+[@AsmrProg-YT](https://github.com/AsmrProg-YT)
 
 
 ## screenshot : 
